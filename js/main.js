@@ -1,0 +1,20 @@
+$("#burger").on("click", function(event){
+    event.preventDefault();
+
+    $(this).toggleClass("active");
+    $("#menu").toggleClass("active");
+});
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for(let anchor of anchors){
+    anchor.addEventListener("click", function(event){
+        event.preventDefault();
+        const blockId = anchor.getAttribute("href");
+
+        document.querySelector('' + blockId).scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    });
+}
