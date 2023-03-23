@@ -246,7 +246,7 @@ header,footer,nav,article,ul li{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 .skill__item p{
 	margin-top: 24px;
@@ -259,9 +259,6 @@ header,footer,nav,article,ul li{
 }
 .skill__img{
 	text-align: center;
-}
-.skill__column:nth-child(2){
-	margin-top: 15px;
 }
 .star{
 	display: flex;
